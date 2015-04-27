@@ -47,13 +47,6 @@ if (filter_var($url, FILTER_VALIDATE_URL) === false) {
 
     <div class="container">
       <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active">
-              <a href="/">Return home</a>
-            </li>
-          </ul>
-        </nav>
         <h3 class="text-muted">Drupal Check: The EngineHack</h3>
       </div>
 

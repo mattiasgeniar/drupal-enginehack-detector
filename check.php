@@ -89,7 +89,7 @@ if (is_hacked_drupal($headers)) {
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active">
-              <a href="/">Return home</a>
+              <a href="/">Scan another site</a>
             </li>
           </ul>
         </nav>
