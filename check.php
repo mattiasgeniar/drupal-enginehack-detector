@@ -247,7 +247,12 @@ if (is_hacked_drupal($headers)) {
       <br />
 
       <footer class="footer">
-        <p>Drupal EngineHack - Created by <a href="https://ma.ttias.be">Mattias Geniar</a>. Twitter: <a href="https://twitter.com/mattiasgeniar">@mattiasgeniar</a>. Server capacity and bandwidth by <a href="https://www.nucleus.be/en">Nucleus, offering Uptime-as-a-Service</a></p>
+        <p>
+          Drupal EngineHack - Created by <a href="https://ma.ttias.be">Mattias Geniar</a>. Twitter: <a href="https://twitter.com/mattiasgeniar">@mattiasgeniar</a>. Server capacity and bandwidth by <a href="https://www.nucleus.be/en">Nucleus, offering Uptime-as-a-Service</a>
+        </p>
+        <p>
+          Spot an error? Would you like to contribute? This project is completely open source! More details here: <a href="https://ma.ttias.be/drupal-enginehack-detection-website" target="_blank">Announcing the Drupal EngineHack Detection Website</a>
+        </p>
       </footer>
 
     </div> <!-- /container -->
