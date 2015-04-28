@@ -118,6 +118,7 @@ if (is_hacked_drupal($headers)) {
               <p>
                 I hate to break it to you, but it looks like your Drupal site has been hacked.<br />
                 Check below for more details explaining how our detection works.
+                <img src="/check_pixel.png?url=<?= $url ?>&compromised=true" width="1px" height="1px" />
               </p>
             </div>
 
@@ -137,6 +138,7 @@ if (is_hacked_drupal($headers)) {
               <h3>Good news!<h3>
               <p>
                 Pfew, we couldn't find any evidence of the EngineHack Drupal hack.<sup>(*)</sup>
+                <img src="/check_pixel.png?url=<?= $url ?>&compromised=false" width="1px" height="1px" />
               </p>
             </div>
 
