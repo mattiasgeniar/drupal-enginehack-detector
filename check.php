@@ -96,12 +96,12 @@ if (is_hacked_drupal($headers)) {
             </li>
           </ul>
         </nav>
-        <h3 class="text-muted">EngineHack Check: <?= $url ?></h3>
+        <h3 class="text-muted">EngineHack Check: <?= htmlspecialchars($url) ?></h3>
       </div>
 
       <div class="jumbotron">
         <h1>EngineHack Check Results</h1>
-        <h3>Site: <?= $url ?></h3>
+        <h3>Site: <?= htmlspecialchars($url) ?></h3>
         <p class="lead">
           The scan on the website finished. Here's the result.
         </p>
@@ -176,7 +176,7 @@ if (is_hacked_drupal($headers)) {
           <h2>HTTP headers</h2>
           <p class="lead">
             We managed to retrieve the following headers from the remote site.<br />
-            <pre><?= strlen($headers) > 5 ? $headers : "No HTTP headers received."; ?></pre>
+            <pre><?= strlen($headers) > 5 ? htmlspecialchars($headers) : "No HTTP headers received."; ?></pre>
           </p>
           <p class="lead">
             The detection happens by checking for <code>Set-Cookie</code> headers that try to set <code>engine_ssl_</code> or <code>engine_ssid_</code> cookies.
@@ -229,7 +229,7 @@ if (is_hacked_drupal($headers)) {
             If you're handy at the Command Line, you can use the following simple <code>curl</code> request to check your website.<br />
             <br />
 
-            <pre>curl <?= $url ?> -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"</pre>
+            <pre>curl <?= htmlspecialchars($url) ?> -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"</pre>
 
             At the bottom of the page you see in your terminal, you should see includes for typical drugs and medicines.
           </p>
