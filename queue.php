@@ -61,7 +61,7 @@ if (filter_var($url, FILTER_VALIDATE_URL) === false) {
           Our server horses are now connecting to the following website and are scanning for any evidence of the hack. Please hold on ... you should be redirected in about 10 seconds.
         </p>
 
-        <h3><?= $url ?></h3>
+        <h3><?= htmlspecialchars($url) ?></h3>
 
         <p>
           You'll be redirected as soon as the check is finished.
